@@ -73,6 +73,7 @@ section{
             box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
             width: 100%;
             margin-top: 60px;
+            max-height: 70vh;
 
             & .task{
                 background-color: #ffffff;
