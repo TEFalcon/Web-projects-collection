@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(247, 231, 202);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1498452572341-c087c3ee25fc?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: contain;
+    background-position: center center;
+    justify-content: baseline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    position: relative;
+    margin-top: 10vh;
+    font-size: 5rem;
+}
+
+.container{
+    transform: rotateY(180deg);
+    margin-top: 12.5vh;
+    display: inline-flex;
+    width: max-content;
+    height: auto;
+    box-shadow: 2px 2px, -2px -2px ;
+    & span{
+        width: 15vw;
+        padding: 5px;
+        margin: 10px;
+        font-size: 4rem;
+        text-align: center;
+        & h2{
+            padding: 4px;
+        }
+        
+        & p{
+            font-size: 2.5rem;
+            
+        }
+    }
+}
+.setUpTimer{
+    position: absolute;
+    top: 30vh;
+    transform: rotateY(0);
+    box-shadow: 2px 2px, -2px -2px ;
+    width: 40vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    & input{
+        padding: 4px;
+        margin: 10px;
+        /* background: black; */
+    }
+    & button{
+        padding: 4px;
+        margin: 10px;
+    }
+}
+
+.container, .setUpTimer{
+    transform-style: preserve-3d;
+    visibility: visible;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
