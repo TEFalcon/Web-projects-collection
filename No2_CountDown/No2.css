@@ -28,6 +28,7 @@ h1{
     width: max-content;
     height: auto;
     box-shadow: 2px 2px, -2px -2px ;
+    padding-bottom: 60px;
     & span{
         width: 15vw;
         padding: 5px;
@@ -43,11 +44,21 @@ h1{
             
         }
     }
+    
+    & button{
+        position: absolute;
+        bottom: 0;
+        left: 26.25vw;
+        width: 12.5vw;
+        font-size:1.75rem;
+        background-color:rgb(247, 231, 202) ;
+        font-weight: 600;
+    }
 }
 .setUpTimer{
     position: absolute;
     top: 30vh;
-    transform: rotateY(0);
+    transform: rotateY(180deg);
     box-shadow: 2px 2px, -2px -2px ;
     width: 40vw;
     height: auto;
@@ -57,16 +68,36 @@ h1{
     flex-direction: column;
     padding: 20px;
     & input{
+        font-weight: 500;
+        font-size: 2rem;
+        color: black;
         padding: 4px;
         margin: 10px;
         /* background: black; */
     }
+    
     & button{
+        font-size: 1.5rem;
         padding: 4px;
+        font-weight: 400;
         margin: 10px;
     }
 }
 
+.container.active,.setUpTimer.active{
+    transform: rotateY(0);
+}
+button{
+    color: black;
+}
+
+button,input{
+    cursor: pointer;
+}
+
+input:invalid ~ button{
+    border: red;
+}
 .container, .setUpTimer{
     transform-style: preserve-3d;
     visibility: visible;

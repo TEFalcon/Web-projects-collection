@@ -26,10 +26,12 @@
             <p>Seconds</p>
         </span>
 
+        <button id="endTimer" onclick="goToSelection()">Stop Timer!</button>
     </div>
-    <div class="setUpTimer">
-        <input type="date" name="" id="">
-        <button id="startTimer">Start</button>
+    <div class="setUpTimer active">
+        <input type="date" name="" id="goalDate" onfocus="disablePastDates(this)">
+        <input type="time" name="" id="goalTime" onfocus="disablePastDates(this)">
+        <button id="startTimer" onclick="goToTimer()">Start</button>
     </div>
     <script src="No2.js"></script>
 </body>
