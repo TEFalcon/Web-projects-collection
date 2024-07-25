@@ -29,8 +29,10 @@
         <button id="endTimer" onclick="goToSelection()">Stop Timer!</button>
     </div>
     <div class="setUpTimer active">
-        <input type="date" name="" id="goalDate" onfocus="disablePastDates(this)">
-        <input type="time" name="" id="goalTime" onfocus="disablePastDates(this)">
+        <label for="DayChoice">Choose Day:</label>
+        <input type="date" name="DayChoice" id="goalDate" onfocus="disablePastDates(this)">
+        <label for="TimeChoice">Choose Time:</label>
+        <input type="time" name="TimeChoice" id="goalTime" onfocus="disablePastDates(this)">
         <button id="startTimer" onclick="goToTimer()">Start</button>
     </div>
     <script src="No2.js"></script>

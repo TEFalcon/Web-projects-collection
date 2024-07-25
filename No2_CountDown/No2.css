@@ -73,10 +73,11 @@ h1{
         color: black;
         padding: 4px;
         margin: 10px;
-        /* background: black; */
+        background: rgb(247, 231, 202) ;
     }
     
     & button{
+        background: rgb(247, 231, 202) ;
         font-size: 1.5rem;
         padding: 4px;
         font-weight: 400;
