@@ -2,3 +2,33 @@
     box-sizing: border-box;
     
 }
+html{
+    background-color: rgb(175, 112, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.eye{
+    width: 500px;
+    aspect-ratio: "1:1";
+    position: relative;
+    & .pupile :last-child{
+        animation: eye-twitch ease-in-out 4s infinite alternate;
+        transform: translate(0,0);
+    }
+
+}
+
+@keyframes eye-twitch{
+    50%{
+        transform: translate(1%,30%);
+        
+    }
+    90%{
+        transform: translate(-15%,13%);
+        
+    }
+}
